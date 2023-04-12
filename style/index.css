@@ -98,7 +98,7 @@ header img{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(35, 36, 35, 0.7);
+    background-color: rgba(35, 36, 35, 0.5);
   }
 
 
@@ -130,6 +130,10 @@ header img{
 nav {
     background-color: #393c3e;
     grid-area: nav;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .drop {
@@ -138,4 +142,14 @@ nav {
     background-color: #333639;
     height: 80px;
     width: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h3 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin-top: 100px;
 }
