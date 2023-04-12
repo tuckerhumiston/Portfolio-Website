@@ -22,6 +22,7 @@ body {
     background-color: #393c3e;
     text-align: center;
     font-size: 1em;
+    line-height: 1em;
 }
 
 .lefty img {
@@ -40,6 +41,7 @@ body {
 
 .lefty .middle h3 {
     margin-left: .3em;
+    line-height: 0.8em;
 }
 
 .lefty .progress {
@@ -51,6 +53,15 @@ body {
     background-color: #4BEBFE;
     height: 3px;
     
+}
+
+.slider-info {
+    display: inline;
+    line-height: 0.3em;
+}
+
+.slider-info p {
+    float: right;
 }
 
 .lefty #HTML {
@@ -73,6 +84,9 @@ body {
     line-height: 2em;
 }
 
+.downloads {
+    margin-top: 50px;
+}
 
 
 
