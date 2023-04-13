@@ -13,12 +13,13 @@ function isMobile() {
 //Open Sessame Nav Bar
 let isOpen = false;
 let sessameButton = document.getElementById('openSessame');
-let navBar = document.getElementById('nav');
+
 const openSessame = function() {
-    
+    let navBar = document.getElementById('nav');
     //Open
     if (!isOpen) {
         //Variables
+        
         let contact = document.getElementById('contact');
         let projects = document.getElementById('projects');
         let about = document.getElementById('about');
@@ -38,9 +39,7 @@ const openSessame = function() {
         about.innerHTML = "<a href='./about.html'>About Me</a>";
         contact.innerHTML = "<a href='./contact.html'>Contact Me</a>";
         home.style.marginTop = '6.5em';
-        about.style.marginTop = "1em";
-        contact.style.marginTop = "1em";
-        projects.style.marginTop = "1em";
+
     //Close
     } else {
         navBar.style.width = '';
