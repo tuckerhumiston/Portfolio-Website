@@ -1,0 +1,14 @@
+body {
+    grid-template-areas: "main nav";
+    grid-template-columns: 1fr 90px;
+    margin: 1.5rem;
+    color: white;
+}
+
+.form-container {
+    background-color: #333639;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}

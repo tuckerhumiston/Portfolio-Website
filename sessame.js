@@ -20,11 +20,6 @@ const openSessame = function() {
         document.getElementById('drop').style.width = '300px';
         document.body.style.gridTemplateColumns = "300px 1fr 300px";
         document.getElementById('openSessame').innerHTML = '>>>';
-        //Rotate page links
-        home.style.writingMode = 'horizontal-tb';
-        contact.style.writingMode = 'horizontal-tb';
-        projects.style.writingMode = 'horizontal-tb';
-        about.style.writingMode = 'horizontal-tb';
         //Add and space page links
         home.innerHTML = "<a href='./index.html'>Home</a>";
         projects.innerHTML = "<a href='./projects.html'>Projects</a>";
@@ -41,7 +36,6 @@ const openSessame = function() {
         document.body.style.gridTemplateColumns = "";
         document.getElementById('openSessame').innerHTML = '<<<';
         home.style.display = '';
-        home.style.writingMode = "vertical-rl";
 
         home.innerHTML = '';
         projects.innerHTML = '';

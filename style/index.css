@@ -150,6 +150,7 @@ header #back{
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: justify;
 }
 
 .boxes .box {
@@ -158,10 +159,13 @@ header #back{
     background-color: #333639;
     border: 3px solid #4BEBFE;
     margin: 1em;
+    padding: 1em;
+
 }
 
 .box h3 {
-    margin-left: 1em;
+    margin-left: 0.3em;
+    text-align: center;
 }
 
 
@@ -203,12 +207,6 @@ nav a {
     align-items: center;
 }
 
-nav h3 {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    margin-top: 100px;
-}
-
 .drop h1:hover {
     color:#4BEBFE;
     text-shadow: 1px 1px black;
@@ -217,5 +215,4 @@ nav h3 {
 nav img {
     max-width: 90%;
     bottom: 0;
-    
 }
