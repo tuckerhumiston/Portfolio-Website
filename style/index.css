@@ -37,7 +37,10 @@ body {
     background-color: #333639;
     padding: 0.5em;
     border-radius: 0px;
-    
+}
+
+.facts {
+    /* margin-left: 2em; */
 }
 
 .lefty .middle h3 {
