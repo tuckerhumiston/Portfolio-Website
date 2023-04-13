@@ -10,8 +10,11 @@
         background-color: #222629;
         display: grid;
     
-        grid-template-areas: "lefty main nav";
-        grid-template-columns: 300px 1fr 90px;
+        grid-template-areas: "nav nav"
+                              "lefty lefty"
+                              "main main";
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr; */
         margin: 1.5rem;
         color: white;
     }
@@ -27,12 +30,12 @@
         font-size: 1em;
         line-height: 1em;
     
-        position: fixed;
-        height: 95%;
+        position: relative;
+        /* height: 95%; */
         z-index: 1;
         top: 24px;
         left: 24px;
-        width:  300px;
+        /* width:  300px; */
     }
     
     .lefty img {
@@ -75,15 +78,15 @@
     }
     
     .lefty #HTML {
-        width: 261px;
+        width: 90%;
     }
     
     .lefty #CSS {
-        width: 232px;
+        width: 80%;
     }
     
     .lefty #JS {
-        width: 189px;
+        width: 65%;
     }
     
     .lefty a {
@@ -109,7 +112,8 @@
     }
     
     header {
-        display: inline;
+        display: inline-flex;
+        flex-direction: column;
     }
     
     header #back{
@@ -184,12 +188,12 @@
         flex-direction: column;
         align-items: center;
     
-        position: fixed;
-        height: 95%;
+        position: relative;
+        height: 80px;
         z-index: 1;
         top: 24px;
         right: 24px;
-        width: 90px;
+        min-width: 100%;
         transition: 0.6s;
     }
     
@@ -204,6 +208,8 @@
         height: 80px;
         width: 90px;
         transition: 0.6s;
+        right: 0;
+        top:0;
     
         display: flex;
         justify-content: center;
