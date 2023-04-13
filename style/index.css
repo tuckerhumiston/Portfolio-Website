@@ -168,6 +168,10 @@ nav {
     align-items: center;
 }
 
+nav a {
+    color: white;
+}
+
 .drop {
     position: absolute;
     display: inline;
