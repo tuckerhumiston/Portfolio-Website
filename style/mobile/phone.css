@@ -13,9 +13,7 @@
         grid-template-areas: "nav nav"
                               "lefty lefty"
                               "main main";
-        grid-template-columns: 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr 1fr; */
-        margin: 1.5rem;
+        grid-template-columns: 1fr;
         color: white;
     }
     
@@ -31,18 +29,10 @@
         line-height: 1em;
     
         position: relative;
-        /* height: 95%; */
         z-index: 1;
-        top: 24px;
-        left: 24px;
-        /* width:  300px; */
-    }
-    
-    .lefty img {
-        max-width: 40%;
-        border-radius: 100%;
         margin-top: 1em;
-        border: solid 3px black;
+        min-width: 100%;
+        left: 1%;
     }
     
     .lefty .middle {
@@ -108,7 +98,7 @@
     
     main {
         grid-area: main;
-        margin: 0 1em;
+        margin: 4em 1em 1em 1em;
     }
     
     header {
@@ -191,8 +181,8 @@
         position: relative;
         height: 80px;
         z-index: 1;
-        top: 24px;
-        right: 24px;
+        top:0;
+        left: 1%;
         min-width: 100%;
         transition: 0.6s;
     }
@@ -215,15 +205,4 @@
         justify-content: center;
         align-items: center;
     }
-    
-    .drop h1:hover {
-        color:#4BEBFE;
-        text-shadow: 1px 1px black;
-    }
-    
-    nav img {
-        max-width: 90%;
-        bottom: 0;
-    }
-    
 }
