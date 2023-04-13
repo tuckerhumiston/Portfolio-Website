@@ -5,7 +5,6 @@ let isOpen = false;
 let sessameButton = document.getElementById('openSessame');
 let navBar = document.getElementById('nav');
 
-
 const openSessame = function() {
     
     //Open
