@@ -26,6 +26,8 @@ const openSessame = function() {
         projects.innerHTML = "<a href='./projects.html'>Projects</a>";
         about.innerHTML = "<a href='./about.html'>About Me</a>";
         contact.innerHTML = "<a href='./contact.html'>Contact Me</a>";
+        about.style.marginTop = "1em"
+        contact.style.marginTop = "1em"
     } else {
         navBar.style.width = '';
         document.getElementById('drop').style.width = '';
