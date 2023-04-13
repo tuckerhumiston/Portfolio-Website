@@ -18,7 +18,11 @@ const openSessame = function() {
         //Open Nav Bar
         navBar.style.width = '300px';
         document.getElementById('drop').style.width = '300px';
-        document.body.style.gridTemplateColumns = "300px 1fr 300px";
+        if (window.location.href === 'file:///C:/Dev/Portfolio%20Website/index.html') {
+            document.body.style.gridTemplateColumns = "300px 1fr 300px";
+        } else {
+            document.body.style.gridTemplateColumns = "1fr 300px";
+        }
         document.getElementById('openSessame').innerHTML = '>>>';
         //Add and space page links
         home.innerHTML = "<a href='./index.html'>Home</a>";
@@ -45,4 +49,5 @@ const openSessame = function() {
     isOpen = !isOpen;
 }
 sessameButton.onclick = openSessame;
+
 
