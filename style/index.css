@@ -17,12 +17,18 @@ body {
 
 .lefty {
     grid-area: lefty;
-    position: sticky;
 
     background-color: #393c3e;
     text-align: center;
     font-size: 1em;
     line-height: 1em;
+
+    position: fixed;
+    height: 95%;
+    z-index: 1;
+    top: 24px;
+    left: 24px;
+    width:  300px;
 }
 
 .lefty img {
@@ -37,10 +43,6 @@ body {
     background-color: #333639;
     padding: 0.5em;
     border-radius: 0px;
-}
-
-.facts {
-    /* margin-left: 2em; */
 }
 
 .lefty .middle h3 {
@@ -147,7 +149,6 @@ header #back{
     max-width: 100%;
     flex-wrap: wrap;
     justify-content: center;
-    color: white;
 }
 
 .boxes .box {
@@ -174,6 +175,14 @@ nav {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+
+    position: fixed;
+    height: 95%;
+    z-index: 1;
+    top: 24px;
+    right: 24px;
+    width: 90px;
+    transition: 0.6s;
 }
 
 nav a {
@@ -186,6 +195,7 @@ nav a {
     background-color: #333639;
     height: 80px;
     width: 90px;
+    transition: 0.6s;
 
     display: flex;
     justify-content: center;
@@ -206,4 +216,5 @@ nav h3 {
 nav img {
     max-width: 90%;
     bottom: 0;
+    
 }
