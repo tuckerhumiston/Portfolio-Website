@@ -30,12 +30,13 @@ const openSessame = function() {
         navBar.style.width = '300px';
         document.getElementById('drop').style.width = '100%';
         navBar.style.height = '100%';
-        if (window.location.href === 'file:///C:/Dev/Portfolio%20Website/index.html') {
-            // document.body.style.gridTemplateColumns = "300px 1fr 300px";
-            document.body.style.gridTemplateColumns = "20% 80% 1fr";
-        } else {
-            document.body.style.gridTemplateColumns = "1fr 300px";
-        }
+        document.body.style.gridTemplateColumns = "20% 80% 1fr";
+        // if (window.location.href === 'file:///C:/Dev/Portfolio%20Website/index.html') {
+        //     // document.body.style.gridTemplateColumns = "300px 1fr 300px";
+            
+        // } else {
+        //     document.body.style.gridTemplateColumns = "1fr 300px";
+        // }
         document.getElementById('openSessame').innerHTML = '>>>';
         //Add and space page links
         home.innerHTML = "<a href='./index.html'>Home</a>";
@@ -68,6 +69,8 @@ sessameButton.onclick = openSessame;
 //Display message for forums
 let submitButton = document.getElementById('submit');
 const displayMessage = function() {
-    document.getElementById('form-space').innerHTML = 'Submission error, please contact me at tuckerhumiston@hotmail.com';
+    let form = document.getElementById('form-space');
+    form.innerHTML = 'Submission error, please contact me at tuckerhumiston@hotmail.com';
+    form.style.textAlign = 'center';
 }
 submitButton.onclick = displayMessage;
