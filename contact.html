@@ -13,24 +13,25 @@
     </head>
     <body>
         <main>
-            <div class="container">
+            <div class="container" id="form-space">
                 <h1 class="center">Contact Me:</h1>
                 <form action="">
-              
                   <label for="fname">First Name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-              
+
                   <label for="lname">Last Name</label>
                   <input type="text" id="lname" name="lastname" placeholder="Your last name..">
               
                   <label for="country">Phone Number</label>
                   <input type="text" id="phone" name="phone" placeholder="Your number..">
 
+                  <label for="country">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email..">
               
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
                     
-                  <input type="submit" value="Submit">
+                  <input type="submit" value="Submit" onclick="displayMessage()" id="submit">
               
                 </form>
               </div>

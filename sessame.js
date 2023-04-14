@@ -65,3 +65,9 @@ sessameButton.onclick = openSessame;
 
 
 
+//Display message for forums
+let submitButton = document.getElementById('submit');
+const displayMessage = function() {
+    document.getElementById('form-space').innerHTML = 'Submission error, please contact me at tuckerhumiston@hotmail.com';
+}
+submitButton.onclick = displayMessage;
