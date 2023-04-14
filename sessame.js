@@ -9,6 +9,8 @@ function isMobile() {
     return check;
   };
 
+  let mobile = isMobile();
+
 
 //Open Sessame Nav Bar
 let isOpen = false;
@@ -26,9 +28,11 @@ const openSessame = function() {
         let home = document.getElementById('home');
         //Open Nav Bar
         navBar.style.width = '300px';
-        document.getElementById('drop').style.width = '300px';
+        document.getElementById('drop').style.width = '100%';
+        navBar.style.height = '100%';
         if (window.location.href === 'file:///C:/Dev/Portfolio%20Website/index.html') {
-            document.body.style.gridTemplateColumns = "300px 1fr 300px";
+            // document.body.style.gridTemplateColumns = "300px 1fr 300px";
+            document.body.style.gridTemplateColumns = "20% 80% 1fr";
         } else {
             document.body.style.gridTemplateColumns = "1fr 300px";
         }
@@ -48,6 +52,7 @@ const openSessame = function() {
         document.getElementById('openSessame').innerHTML = '<<<';
         home.style.display = '';
 
+        navBar.style.height = '';
         home.innerHTML = '';
         projects.innerHTML = '';
         about.innerHTML = '';
