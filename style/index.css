@@ -32,13 +32,6 @@ body {
     width:  300px;
 }
 
-.lefty img {
-    max-width: 40%;
-    border-radius: 100%;
-    margin-top: 1em;
-    border: solid 3px black;
-}
-
 .lefty .middle {
     text-align: left;
     background-color: #333639;
