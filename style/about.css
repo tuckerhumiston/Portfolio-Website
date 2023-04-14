@@ -2,3 +2,9 @@ body{
     display: flex;
     justify-content: center;
 }
+
+#maine {
+    position: relative;
+    width: 100%;
+    max-height: 60%;
+}

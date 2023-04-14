@@ -29,7 +29,7 @@ const openSessame = function() {
         //Add and space page links
         home.innerHTML = "<a href='./index.html'>Home</a>";
         projects.innerHTML = "<a href='./projects.html'>Projects</a>";
-        about.innerHTML = "<a href='./about.html'>About Me</a>";
+        // about.innerHTML = "<a href='./about.html'>About Me</a>";
         contact.innerHTML = "<a href='./contact.html'>Contact Me</a>";
         home.style.marginTop = '6.5em';
     //Close
@@ -43,7 +43,7 @@ const openSessame = function() {
         navBar.style.height = '';
         home.innerHTML = '';
         projects.innerHTML = '';
-        about.innerHTML = '';
+        // about.innerHTML = '';
         contact.innerHTML = '';
     }
     isOpen = !isOpen;
